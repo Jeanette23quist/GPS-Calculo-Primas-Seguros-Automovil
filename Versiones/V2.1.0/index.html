@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculo de primas</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <button onclick="traceRoute()">Trazar Ruta</button>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxPv-yXo-u6nI3yE_mNUhCOvDbVQleczc&callback=initMap" async defer></script>
+  <script src="mapa.js" defer></script>
+</body>
+
+
+
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cuestionario</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>Año del auto:</p>
+            <input type="radio" name="year" value="6"> 2000 - 2012<br>
+            <input type="radio" name="year" value="8"> 2013 - 2020<br>
+            <input type="radio" name="year" value="10"> 2021 - 2024<br>
+        </div>
+
+        <div class="question">
+            <p>Valoración del precio del vehículo:</p>
+            <input type="radio" name="price" value="6"> 300,000 - 500,000 MXN<br>
+            <input type="radio" name="price" value="8"> 500,000 - 800,000 MXN<br>
+            <input type="radio" name="price" value="10"> Mayor a 800,000 MXN<br>
+        </div>
+
+        <div class="question">
+            <p>Disponibilidad en el mercado de los repuestos:</p>
+            <input type="radio" name="spareParts" value="6"> Alta<br>
+            <input type="radio" name="spareParts" value="7"> Media<br>
+            <input type="radio" name="spareParts" value="10"> Baja<br>
+        </div>
+
+        <div class="question">
+            <p>Lugar de tránsito:</p>
+            <input type="radio" name="traffic" value="10"> Bulevares y avenidas principales<br>
+            <input type="radio" name="traffic" value="7"> Periferia<br>
+            <input type="radio" name="traffic" value="5"> Calles con bajo flujo vehicular<br>
+        </div>
+
+        <div class="question">
+            <p>Uso del vehículo:</p>
+            <input type="radio" name="usage" value="10"> Viaje personal<br>
+            <input type="radio" name="usage" value="7"> Viaje de negocios<br>
+            <input type="radio" name="usage" value="5"> Fines comerciales<br>
+        </div>
+
+        <div class="question">
+            <p>Edad del conductor:</p>
+            <input type="radio" name="age" value="10"> 18-40 años<br>
+            <input type="radio" name="age" value="5"> 41-60 años<br>
+            <input type="radio" name="age" value="7"> Mayor a 60 años<br>
+        </div>
+
+        <div class="question">
+            <p>Género del conductor:</p>
+            <input type="radio" name="gender" value="10"> Hombre<br>
+            <input type="radio" name="gender" value="7"> Mujer<br>
+        </div>
+
+        <div class="question">
+            <p>Historial de manejo:</p>
+            <input type="radio" name="drivingHistory" value="10"> Accidentes registrados<br>
+            <input type="radio" name="drivingHistory" value="7"> Sin accidentes previos<br>
+        </div>
+
+        <div class="question">
+            <p>Hora en qué transita mayormente:</p>
+            <input type="radio" name="trafficTime" value="10"> Horas pico entre semana<br>
+            <input type="radio" name="trafficTime" value="7"> Por la noche en fin de semana<br>
+            <input type="radio" name="trafficTime" value="5"> Horas de bajo flujo vehicular<br>
+        </div>
+
+        <div class="question">
+            <p>Salida fuera de la ciudad:</p>
+            <input type="radio" name="outOfTown" value="10"> Sí (frecuentemente)<br>
+            <input type="radio" name="outOfTown" value="7"> Sí (Ocasionalmente)<br>
+            <input type="radio" name="outOfTown" value="5"> No<br>
+        </div>
+        
+        <button type="submit">Enviar respuestas</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
