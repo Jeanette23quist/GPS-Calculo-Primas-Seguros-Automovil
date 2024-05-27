@@ -1,0 +1,4 @@
+Se suman los puntajes del cuestionario con los del mapa.
+Contiene botón de borrar pero presenta fallas al borrar 
+los pines del mapa, no lo hace hasta que se traza una
+nueva ruta.
