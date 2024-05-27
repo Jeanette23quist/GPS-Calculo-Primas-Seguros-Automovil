@@ -1,0 +1,2 @@
+Se corrigieron los errores de redundancia y agregaron los puntajes correspondientes a las 
+calles más transitadas y las calles con más accidentes en Torreón.
