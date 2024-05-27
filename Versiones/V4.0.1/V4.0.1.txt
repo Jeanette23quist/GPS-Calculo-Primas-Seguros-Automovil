@@ -1,0 +1,1 @@
+Se dio formato css a la página.
