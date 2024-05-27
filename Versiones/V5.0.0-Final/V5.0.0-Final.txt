@@ -1,0 +1,3 @@
+Se corrigieron errores del botón borrar, y algunas 
+más actualizaciones de código. Esta es la parte 
+final del proyecto
