@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de primas</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</head>
+<body>
+    <div id="map"></div>
+    <button onclick="traceRoute()">Trazar Ruta</button>
+
+    <h1>Calles recorridas</h1>
+    <table id="streetTable">
+        <thead>
+            <tr>
+                <th>Calles Transitadas</th>
+                <th>Puntos</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán dinámicamente las filas con los nombres de las calles y los puntos -->
+        </tbody>
+    </table>
+    <h1><!-- Pequeño espacio entre la tabla y el cuestionario --></h1>
+    <form id="quizForm">
+        <h1>Cuestionario</h1>
+            <div class="question">
+                <p>Año del auto:</p>
+                <input type="radio" name="year" value="2"> 2000 - 2012 (2 puntos)<br>  
+                <input type="radio" name="year" value="4"> 2013 - 2020 (4 puntos)<br>
+                <input type="radio" name="year" value="6"> 2021 - 2024 (6 puntos)<br>
+            </div>
+    
+            <div class="question">
+                <p>Valoración del precio del vehículo:</p>
+                <input type="radio" name="price" value="2"> $300,000 - $500,000 MXN (2 puntos)<br>
+                <input type="radio" name="price" value="4"> $500,000 - $800,000 MXN (4 puntos)<br>
+                <input type="radio" name="price" value="6"> Mayor a $800,000 MXN (6 puntos)<br>
+            </div>
+    
+            <div class="question">
+                <p>Disponibilidad en el mercado de los repuestos:</p>
+                <input type="radio" name="spareParts" value="2"> Baja (2 puntos)<br>
+                <input type="radio" name="spareParts" value="4"> Media (4 puntos)<br>
+                <input type="radio" name="spareParts" value="6"> Alta (6 puntos)<br>
+                 
+            </div>
+    
+            <div class="question">
+                <p>Lugar de tránsito:</p>
+                <input type="radio" name="traffic" value="2"> Calles con bajo flujo vehicular (2 puntos)<br>
+                <input type="radio" name="traffic" value="4"> Periferia (4 puntos)<br>
+                <input type="radio" name="traffic" value="6"> Bulevares y avenidas principales (6 puntos)<br>
+            </div>
+    
+            <div class="question">
+                <p>Uso del vehículo:</p>
+               <input type="radio" name="usage" value="2"> Fines comerciales (2 puntos)<br> 
+               <input type="radio" name="usage" value="4"> Viaje de negocios (4 puntos)<br>
+               <input type="radio" name="usage" value="6"> Viaje personal (6 puntos)<br>
+                   
+            </div>
+    
+            <div class="question">
+                <p>Edad del conductor:</p>
+                <input type="radio" name="age" value="2"> 18-40 años (2 puntos)<br>
+                <input type="radio" name="age" value="4"> 41-60 años (4 puntos)<br>
+                <input type="radio" name="age" value="6"> Mayor a 60 años (6 puntos)<br>
+            </div>
+    
+            <div class="question">
+                <p>Género del conductor:</p>
+               <input type="radio" name="gender" value="2"> Mujer (2 puntos)<br>
+               <input type="radio" name="gender" value="4"> Hombre (4 puntos)<br>
+                
+            </div>
+    
+            <div class="question">
+                <p>Historial de manejo:</p>
+                <input type="radio" name="drivingHistory" value="2"> Sin accidentes previos (2 puntos)<br>
+                <input type="radio" name="drivingHistory" value="4"> Accidentes registrados (4 puntos)<br>
+                
+            </div>
+    
+            <div class="question">
+                <p>Hora en qué transita mayormente:</p>
+                <input type="radio" name="trafficTime" value="2"> Horas de bajo flujo vehicular (2 puntos)<br>
+                <input type="radio" name="trafficTime" value="4"> Por la noche en fin de semana (4 puntos)<br>
+                <input type="radio" name="trafficTime" value="6"> Horas pico entre semana (6 puntos)<br>         
+            </div>
+    
+            <div class="question">
+                <p>Salida fuera de la ciudad:</p>
+                <input type="radio" name="outOfTown" value="2"> No (2 puntos)<br>       
+                <input type="radio" name="outOfTown" value="4"> Sí (Ocasionalmente) (4 puntos)<br>
+                <input type="radio" name="outOfTown" value="6"> Sí (frecuentemente) (6 puntos)<br>
+            </div>  
+            <button type="submit">Enviar respuestas</button>  
+        </form>
+        
+        <div id="result"></div>
+       <!--  <button onclick="resetApp()">Reiniciar</button> -->
+        <button onclick="reloadPage()">Limpiar Campos</button> <!-- Botón adicional -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxPv-yXo-u6nI3yE_mNUhCOvDbVQleczc&callback=initMap" async defer></script>
+        <script src="mapa.js" defer></script>
+        <script src="script.js"></script>
+
+</body>
+</html>
